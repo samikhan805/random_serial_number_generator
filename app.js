@@ -83,6 +83,12 @@ function errorMessage() {
               input.classList.remove('error-input')
         }
      }, 4000);
+    
+     reload.style.visibility = 'visible'
+  
+     if (input.disabled == false) {
+        input.disabled = true
+     }
 }
 
 btn.addEventListener('click', () => {
