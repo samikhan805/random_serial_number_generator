@@ -75,6 +75,7 @@ function errorMessage() {
     serial_notifier.innerHTML = 'Please insert your desired value'
     serial_notifier.classList.add('serial-notifier-add')
   
+    btn.disabled = true
     reload.style.visibility = 'visible'
     input.disabled = true
 
