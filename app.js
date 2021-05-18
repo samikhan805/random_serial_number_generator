@@ -47,7 +47,7 @@ function mainProgram() {
   }
   
   time.innerHTML = 'You generate the RANDOM SERIAL NUMBER GENERATING SYSTEM on ' + date.toLocaleString()
-  gen_text.innerHTML = name.toUpperCase() + ' owns the whole system'
+  gen_text.innerHTML = name.toUpperCase() + ' owns the entire system'
   total_serial_number.innerHTML = input.value
   serial_notifier.style.color = 'green'
   input.value = ''
