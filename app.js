@@ -68,10 +68,20 @@ function mainProgram() {
 }
 
 function errorMessage() {
-  input.style.borderColor = 'red'
-  setTimeout(() => {
-    alert('Please insert your desired value')
-  }, 50);
+  input.classList.add('error-input')
+//   setTimeout(() => {
+//     alert('Please insert your desired value')
+//   }, 50);
+    serial_notifier.innerHTML = 'Please insert your desired value'
+    serial_notifier.classList.add('serial-notifier-add')
+
+    setTimeout(() => {
+        if (serial_notifier.classList.contains('serial-notifier-add')) {
+            serial_notifier.classList.remove('serial-notifier-add')
+            serial_notifier.innerHTML = 'Total serial: '
+            input.classList.remove('error-input')
+        }
+    }, 4000);
 }
 
 btn.addEventListener('click', () => {
