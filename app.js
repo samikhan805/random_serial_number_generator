@@ -12,6 +12,8 @@ var Print = document.querySelector('.print')
 var serial_notifier = document.querySelector('.serial_text')
 var total_serial_number = document.querySelector('.serial_text_number')
 
+alert('Welcome to the Random Serial Number Generating System developed by ' + name.toUpperCase() + '. \nTo use this system, type your desired number into the \'Input\' section. Then click on the \'Generate\' to get the result. You can also get it by pressing ENTER key. \n\nNote: Make sure that you\'ve at least a single digit in your \'Input\'. Otherwise you\'ll get error. Give it a try.')
+
 function mainProgram() {
   for (var i = 1; i <= input.value; i++) {
     arr.push(i)
