@@ -20,6 +20,7 @@ body {
 table {
   border: 1px solid #000;
   padding: 0.2rem;
+  margin-top: ;
 }
 th {
   border: 1px solid #000;
@@ -35,8 +36,9 @@ td {
   color: green;
 }
 .serial_text {
-  margin: 0.65rem auto 0.4rem;
+  margin-bottom: 0.4rem;
   font-weight: 600;
+  padding: 0.3rem;
 }
 .serial_text_number {
   color: green;
@@ -106,4 +108,15 @@ input:focus {
   cursor: pointer;
   font-weight: 600;
 
+}
+.serial-notifier-add {
+  color: #fff;
+  background-color: red;
+  padding: 0.3rem;
+  width: 86.2%;
+  margin-left: 0;
+}
+.error-input {
+  box-shadow: 1px 1px 6.5px red;
+  border-color: red;
 }
