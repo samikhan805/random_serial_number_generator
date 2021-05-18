@@ -65,6 +65,9 @@ function mainProgram() {
   if (input.disabled == false) {
     input.disabled = true
   }
+
+  btn.disabled = true
+  btn.style.background = '#035003'
 }
 
 function errorMessage() {
