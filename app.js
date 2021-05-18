@@ -74,6 +74,12 @@ function errorMessage() {
 //   }, 50);
     serial_notifier.innerHTML = 'Please insert your desired value'
     serial_notifier.classList.add('serial-notifier-add')
+  
+    reload.style.visibility = 'visible'
+  
+     if (input.disabled == false) {
+        input.disabled = true
+     }
 
     setTimeout(() => {
         if (serial_notifier.classList.contains('serial-notifier-add')) {
@@ -84,11 +90,7 @@ function errorMessage() {
         }
      }, 4000);
     
-     reload.style.visibility = 'visible'
-  
-     if (input.disabled == false) {
-        input.disabled = true
-     }
+     
 }
 
 btn.addEventListener('click', () => {
