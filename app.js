@@ -77,11 +77,12 @@ function errorMessage() {
 
     setTimeout(() => {
         if (serial_notifier.classList.contains('serial-notifier-add')) {
-            serial_notifier.classList.remove('serial-notifier-add')
-            serial_notifier.innerHTML = 'Total serial: '
-            input.classList.remove('error-input')
+              serial_notifier.classList.remove('serial-notifier-add')
+              serial_notifier.innerHTML = 'Total serial: '
+              total_serial_number.innerHTML = input.value
+              input.classList.remove('error-input')
         }
-    }, 4000);
+     }, 4000);
 }
 
 btn.addEventListener('click', () => {
