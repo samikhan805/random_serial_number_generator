@@ -76,6 +76,7 @@ function errorMessage() {
     serial_notifier.classList.add('serial-notifier-add')
   
     btn.disabled = true
+    btn.style.background = 'grey'
     reload.style.visibility = 'visible'
     input.disabled = true
 
