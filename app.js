@@ -76,10 +76,7 @@ function errorMessage() {
     serial_notifier.classList.add('serial-notifier-add')
   
     reload.style.visibility = 'visible'
-  
-     if (input.disabled == false) {
-        input.disabled = true
-     }
+    input.disabled = true
 
     setTimeout(() => {
         if (serial_notifier.classList.contains('serial-notifier-add')) {
