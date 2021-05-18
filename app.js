@@ -83,7 +83,6 @@ function errorMessage() {
         if (serial_notifier.classList.contains('serial-notifier-add')) {
               serial_notifier.classList.remove('serial-notifier-add')
               serial_notifier.innerHTML = 'Total serial: '
-              total_serial_number.innerHTML = input.value
               input.classList.remove('error-input')
         }
      }, 4000);
