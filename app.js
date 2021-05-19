@@ -100,6 +100,10 @@ btn.addEventListener('click', () => {
   if (input.value == '') {
     errorMessage()
   }
+  else if (input.value == 0) {
+      alert('Please input value more than zero (0)')
+      input.value = ''
+  }
   else {
     mainProgram()
   }
@@ -110,6 +114,10 @@ window.addEventListener('keydown', key => {
   if (key.keyCode == '13') {
     if (input.value == '') {
       errorMessage()
+    }
+    else if (input.value == 0) {
+      alert('Please input value more than zero (0)')
+      input.value = ''
     }
     else {
       mainProgram()
