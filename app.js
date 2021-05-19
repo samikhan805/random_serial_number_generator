@@ -101,7 +101,7 @@ btn.addEventListener('click', () => {
     errorMessage()
   }
   else if (input.value == 0) {
-      alert('Please input value more than zero (0)')
+      alert('Please input value getter than zero (0)')
       input.value = ''
   }
   else {
@@ -116,7 +116,7 @@ window.addEventListener('keydown', key => {
       errorMessage()
     }
     else if (input.value == 0) {
-      alert('Please input value more than zero (0)')
+      alert('Please input value getter than zero (0)')
       input.value = ''
     }
     else {
