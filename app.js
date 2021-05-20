@@ -50,7 +50,7 @@ function mainProgram() {
   
   time.innerHTML = 'You generate the RANDOM SERIAL NUMBER GENERATING SYSTEM on ' + date.toLocaleString()
   gen_text.innerHTML = name.toUpperCase() + ' owns the entire system'
-  total_serial_number.innerHTML = input.value
+  total_serial_number.innerHTML = arr.length
   serial_notifier.style.color = 'green'
   input.value = ''
   input.style.borderColor = 'green'
