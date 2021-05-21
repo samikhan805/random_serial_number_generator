@@ -74,6 +74,7 @@ function mainProgram() {
 
 function errorMessage() {
   input.classList.add('error-input')
+  window.navigator.vibrate(100)
 //   setTimeout(() => {
 //     alert('Please insert your desired value')
 //   }, 50);
