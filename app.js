@@ -12,9 +12,14 @@ var Print = document.querySelector('.print')
 var serial_notifier = document.querySelector('.serial_text')
 var total_serial_number = document.querySelector('.serial_text_number')
 
+var yesAudio = new Audio("yes.mp3")
+var noAudio = new Audio("no.mp3")
+
 alert('Welcome to the Random Serial Number Generating System developed by ' + name.toUpperCase() + '. \nTo use this system, type your desired number into the \'Input\' section. Then click on the \'Generate\' to get the result. You can also get it by pressing ENTER key. \n\nNote: Make sure that you\'ve at least a single digit in your \'Input\'. And your input value must be getter than zero (0). Otherwise, you\'ll get an error. Why so late, dear? Give it a try.')
 
 function mainProgram() {
+  yesAudio.play()
+
   for (var i = 1; i <= input.value; i++) {
     arr.push(i)
   }
@@ -73,6 +78,8 @@ function mainProgram() {
 }
 
 function errorMessage() {
+  noAudio.play()
+ 
   input.classList.add('error-input')
   window.navigator.vibrate(100)
 //   setTimeout(() => {
